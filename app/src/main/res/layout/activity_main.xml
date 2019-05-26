@@ -5,18 +5,33 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".MainActivity">
+
+    <TextView
+        android:layout_margin="@dimen/normal_padding"
+        android:id="@+id/tv_libro_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:padding="20dp"
+        android:text="TallerLibreria"/>
+
+    <Button
+        android:layout_margin="@dimen/normal_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_padding"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textSize="@dimen/normal_size_text"
+        android:text="ADD"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_libro_list"
+        android:layout_margin="@dimen/normal_padding"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-    <fragment
-        android:id="@+id/fragment_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/normal_padding" />
 
 </LinearLayout>

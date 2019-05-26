@@ -3,4 +3,5 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="escriba_su_libro">Escriba su libro</string>
     <string name="aniadir_btn">Aniadir</string>
+    <string name="escriba_su_id">Escriba_su_id</string>
 </resources>

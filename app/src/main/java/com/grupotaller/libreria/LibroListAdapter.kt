@@ -22,6 +22,8 @@ class LibroListAdapter internal constructor(
         val libroItemView: TextView = itemView.findViewById(R.id.tv_libro_list)
     }
 
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LibroViewHolder {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         val itemView = inflater.inflate(R.layout.libro_list_item, parent, false)

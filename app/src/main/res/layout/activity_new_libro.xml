@@ -1,21 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".NewLibroActivity"
     android:padding="@dimen/normal_padding">
 
     <EditText
-        android:id="@+id/edit_libro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/et_id_newlibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_size_text"
+        android:hint="@string/escriba_su_id"
+        android:layout_marginTop="@dimen/big_margin"/>
+
+    <EditText
+        android:id="@+id/et_titulo_newlibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_size_text"
+        android:layout_marginTop="@dimen/big_margin"
+        android:hint="Digite su titulo"/>
+
+    <EditText
+        android:id="@+id/et_autor_newlibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_size_text"
+        android:layout_marginTop="@dimen/big_margin"
+        android:hint="Digite su Autor"/>
+
+    <EditText
+        android:id="@+id/et_tag_newlibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_size_text"
+        android:layout_marginTop="@dimen/big_margin"
+        android:hint="Digite su TAG"/>
+
+    <EditText
+        android:id="@+id/et_resumen_newlibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_size_text"
+        android:layout_marginTop="@dimen/big_margin"
+        android:hint="Digite su resumen"/>
 
     <Button
         android:id="@+id/button_save"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_size_text"
+        android:layout_marginTop="@dimen/btn_padding_newlibro"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="ADD"/>
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_resumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
